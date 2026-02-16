@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+
+# Env files (keep example)
+.env
+.env.*
+!.env.example
+
+# Credentials
+*.json
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Packaging
+*.egg-info/
+dist/
+build/

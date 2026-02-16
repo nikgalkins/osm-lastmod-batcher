@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osm-lastmod-batcher"
+version = "0.1.0"
+description = "Batch updater for OSM relation last-modified timestamps via Overpass and Google Sheets"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "python-dotenv>=1.0.0",
+  "requests>=2.31.0",
+  "gspread>=6.0.0",
+  "oauth2client>=4.1.3",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
